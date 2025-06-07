@@ -8,6 +8,72 @@
         "env": []
     },
     {
+        "id": "5024414ceab8c8b2",
+        "type": "tab",
+        "label": "sonoff",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "31a99116.50a74e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9746f5e73a10a06f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "bc7760429d1cafbf",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -51,5 +117,186 @@
         "x": 580,
         "y": 140,
         "wires": []
+    },
+    {
+        "id": "bf1734b93fd4b3eb",
+        "type": "exec",
+        "z": "8c47e81d6c0d7f24",
+        "command": "ping google.com",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "9d57a2fa79c11126"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b5be0dec28c73398",
+        "type": "inject",
+        "z": "8c47e81d6c0d7f24",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 760,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d57a2fa79c11126",
+        "type": "debug",
+        "z": "8c47e81d6c0d7f24",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c8c4f36cd73581f1",
+        "type": "inject",
+        "z": "8c47e81d6c0d7f24",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 380,
+        "wires": [
+            [
+                "bf1734b93fd4b3eb"
+            ]
+        ]
+    },
+    {
+        "id": "31a99116.86e71",
+        "type": "Sonoff device",
+        "z": "5024414ceab8c8b2",
+        "mode": "0",
+        "broker": "31a99116.50a74e",
+        "device": "light_livingroom",
+        "name": "Living Room Light",
+        "onValue": "ON",
+        "offValue": "OFF",
+        "cmdPrefix": "cmnd",
+        "statPrefix": "stat",
+        "telePrefix": "tele",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9ade7b5dd0c05e5",
+        "type": "aedes broker",
+        "z": "5024414ceab8c8b2",
+        "name": "",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1c1c43337d75c705",
+        "type": "mqtt in",
+        "z": "5024414ceab8c8b2",
+        "name": "",
+        "topic": "xx",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9746f5e73a10a06f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5aac47247eea5362",
+        "type": "amazon-echo-hub",
+        "z": "5024414ceab8c8b2",
+        "port": "8080",
+        "processinput": 0,
+        "discovery": true,
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "1ade89c8dfce393d"
+            ]
+        ]
+    },
+    {
+        "id": "1ade89c8dfce393d",
+        "type": "amazon-echo-device",
+        "z": "5024414ceab8c8b2",
+        "name": "oficina",
+        "topic": "encender",
+        "x": 950,
+        "y": 260,
+        "wires": [
+            []
+        ]
     }
 ]

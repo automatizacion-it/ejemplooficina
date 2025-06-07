@@ -2,7 +2,11 @@
     "name": "rack-comunicaciones",
     "description": "rack de comunicaciones salidas",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-aedes": "0.6.0",
+        "node-red-contrib-sonoff-tasmota": "3.0.0",
+        "node-red-contrib-amazon-echo": "0.1.14"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
