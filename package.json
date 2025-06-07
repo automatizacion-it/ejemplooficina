@@ -5,7 +5,9 @@
     "dependencies": {
         "node-red-contrib-aedes": "0.6.0",
         "node-red-contrib-sonoff-tasmota": "3.0.0",
-        "node-red-contrib-amazon-echo": "0.1.14"
+        "node-red-contrib-amazon-echo": "0.1.14",
+        "node-red-dashboard": "3.6.5",
+        "node-red-node-ui-table": "0.4.4"
     },
     "node-red": {
         "settings": {
