@@ -93,7 +93,7 @@
         "id": "05cd1bad6830275a",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -105,7 +105,8 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
@@ -115,44 +116,44 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
+                    "default": "#097479",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -194,6 +195,25 @@
         "order": 1,
         "disp": true,
         "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d8140ebb010027f",
+        "type": "ui_tab",
+        "name": "Grafica estado",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "217c870c3da20c03",
+        "type": "ui_group",
+        "name": "Estado servidor",
+        "tab": "8d8140ebb010027f",
+        "order": 1,
+        "disp": true,
+        "width": "23",
         "collapse": false,
         "className": ""
     },
@@ -254,8 +274,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 560,
-        "y": 340,
+        "x": 520,
+        "y": 280,
         "wires": [
             [
                 "9d57a2fa79c11126"
@@ -328,11 +348,73 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 240,
-        "y": 380,
+        "x": 260,
+        "y": 260,
         "wires": [
             [
                 "bf1734b93fd4b3eb"
+            ]
+        ]
+    },
+    {
+        "id": "c769d64b85990897",
+        "type": "ui_chart",
+        "z": "8c47e81d6c0d7f24",
+        "name": "",
+        "group": "217c870c3da20c03",
+        "order": 0,
+        "width": "23",
+        "height": "14",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b227e5a55ca2c692",
+        "type": "ping",
+        "z": "8c47e81d6c0d7f24",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "estado servidor",
+        "host": "www.google.com",
+        "timer": "5",
+        "inputs": 0,
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "c769d64b85990897"
             ]
         ]
     },
