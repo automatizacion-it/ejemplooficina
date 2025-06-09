@@ -62,6 +62,14 @@
         "env": []
     },
     {
+        "id": "67c588bef353f9fb",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "31a99116.50a74e",
         "type": "mqtt-broker",
         "name": "",
