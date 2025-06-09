@@ -399,6 +399,11 @@
         "username": ""
     },
     {
+        "id": "95e45f0f425133dc",
+        "type": "alexa-home-conf",
+        "username": ""
+    },
+    {
         "id": "deb7f8ce1d15f8a2",
         "type": "alexa-remote-account",
         "name": "",
@@ -413,11 +418,6 @@
         "userAgent": "",
         "useWsMqtt": "on",
         "autoInit": "on"
-    },
-    {
-        "id": "95e45f0f425133dc",
-        "type": "alexa-home-conf",
-        "username": ""
     },
     {
         "id": "ed43e3196a0ae0f0",
@@ -635,8 +635,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 760,
-        "y": 220,
+        "x": 890,
+        "y": 200,
         "wires": [
             []
         ]
