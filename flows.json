@@ -47,19 +47,19 @@
         "info": ""
     },
     {
-        "id": "dd1fa0a280aa81d2",
-        "type": "tab",
-        "label": "Flujo 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "7f84d0fc.49d6f",
         "type": "tab",
         "label": "Database",
         "disabled": false,
         "info": ""
+    },
+    {
+        "id": "ebf8df8a470fbb3e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
     },
     {
         "id": "31a99116.50a74e",
@@ -378,6 +378,160 @@
         "mode": "RWC"
     },
     {
+        "id": "ef11a2ec986362b8",
+        "type": "alexa-home-conf",
+        "username": ""
+    },
+    {
+        "id": "deb7f8ce1d15f8a2",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "proxy",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "95e45f0f425133dc",
+        "type": "alexa-home-conf",
+        "username": ""
+    },
+    {
+        "id": "ed43e3196a0ae0f0",
+        "type": "alexa-remote-account",
+        "name": "zzz",
+        "authMethod": "password",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "82251b20bd39e989",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "cookie",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "15f45a2decd417e7",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "cookie",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "96d9aad5f4d957e7",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "proxy",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "f44338c9933907ad",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "password",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "4cad4944b6e50bcb",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "cookie",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "db6788bee29c2d18",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "proxy",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "706c02af75d35a7e",
+        "type": "alexa-remote-account",
+        "name": "",
+        "authMethod": "proxy",
+        "proxyOwnIp": "localhost",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "3",
+        "alexaServiceHost": "pitangui.amazon.com",
+        "amazonPage": "amazon.com",
+        "acceptLanguage": "en-US",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
         "id": "bc7760429d1cafbf",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -434,8 +588,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 520,
-        "y": 280,
+        "x": 460,
+        "y": 240,
         "wires": [
             [
                 "9d57a2fa79c11126"
@@ -719,31 +873,6 @@
         "wires": []
     },
     {
-        "id": "1ade89c8dfce393d",
-        "type": "amazon-echo-device",
-        "z": "5024414ceab8c8b2",
-        "name": "oficina",
-        "topic": "encender",
-        "x": 170,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5aac47247eea5362",
-        "type": "amazon-echo-hub",
-        "z": "5024414ceab8c8b2",
-        "port": "8080",
-        "processinput": "3",
-        "discovery": true,
-        "x": 370,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "31a99116.86e71",
         "type": "Sonoff device",
         "z": "5024414ceab8c8b2",
@@ -766,13 +895,13 @@
         "id": "af021b2a8951a67a",
         "type": "mqtt-check",
         "z": "5024414ceab8c8b2",
-        "host": "",
-        "port": "",
+        "host": "localhost",
+        "port": "1883",
         "username": "",
         "password": "",
         "name": "",
-        "x": 380,
-        "y": 160,
+        "x": 500,
+        "y": 200,
         "wires": [
             []
         ]
@@ -1525,8 +1654,12 @@
         "name": "Insert",
         "func": "var newMsg = {\n \"topic\": \"INSERT INTO data ( timestamp,sensor,temperature,humidity) values(0,'sensor',20,66)\"\n};\n\nreturn newMsg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
-        "x": 370,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
         "y": 140,
         "wires": [
             [
@@ -1708,8 +1841,8 @@
         "tostatus": false,
         "complete": "true",
         "targetType": "full",
-        "x": 550,
-        "y": 120,
+        "x": 670,
+        "y": 160,
         "wires": []
     },
     {
@@ -1915,8 +2048,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "",
-        "x": 410,
-        "y": 240,
+        "x": 470,
+        "y": 220,
         "wires": [
             [
                 "df3ec565.41cf"
@@ -1938,5 +2071,49 @@
                 "d4d337ca.8077b8"
             ]
         ]
+    },
+    {
+        "id": "f792e1c4de304f58",
+        "type": "DuloNodeHub",
+        "z": "ebf8df8a470fbb3e",
+        "name": "",
+        "plan": "Unknown",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "3c276b5b6c76558c"
+            ]
+        ]
+    },
+    {
+        "id": "3c276b5b6c76558c",
+        "type": "DuloNodeDevice",
+        "z": "ebf8df8a470fbb3e",
+        "name": "luz sala",
+        "deviceType": "light",
+        "x": 700,
+        "y": 120,
+        "wires": [
+            [
+                "2b96f5b22e3b6ae5"
+            ]
+        ]
+    },
+    {
+        "id": "2b96f5b22e3b6ae5",
+        "type": "debug",
+        "z": "ebf8df8a470fbb3e",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 120,
+        "wires": []
     }
 ]
