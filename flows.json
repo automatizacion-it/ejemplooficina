@@ -320,12 +320,6 @@
         "collapse": false
     },
     {
-        "id": "8274941a.73344",
-        "type": "sqlitedb",
-        "db": "/home/pi/.node-red/data/sites.db",
-        "mode": "RWC"
-    },
-    {
         "id": "5addf68094c598c3",
         "type": "ui_group",
         "name": "Default",
@@ -335,12 +329,6 @@
         "width": 6,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "f5a33dc2.f6f08",
-        "type": "sqlitedb",
-        "db": "c:\\users\\steve\\.node-red\\test.db",
-        "mode": "RWC"
     },
     {
         "id": "34054411.bf9404",
@@ -376,6 +364,18 @@
         "width": 6,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "8274941a.73344",
+        "type": "sqlitedb",
+        "db": "/home/pi/.node-red/data/sites.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "f5a33dc2.f6f08",
+        "type": "sqlitedb",
+        "db": "c:\\users\\steve\\.node-red\\test.db",
+        "mode": "RWC"
     },
     {
         "id": "bc7760429d1cafbf",
@@ -579,23 +579,6 @@
         ]
     },
     {
-        "id": "dc0791b78935c90d",
-        "type": "promptinput",
-        "z": "8c47e81d6c0d7f24",
-        "name": "",
-        "datatype": "str",
-        "prompt": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "validation": "",
-        "validationType": "ejsonata",
-        "x": 190,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "23cf19f30950dc60",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -656,6 +639,23 @@
                 "716a42db87720ee1"
             ],
             [],
+            []
+        ]
+    },
+    {
+        "id": "dc0791b78935c90d",
+        "type": "promptinput",
+        "z": "8c47e81d6c0d7f24",
+        "name": "",
+        "datatype": "str",
+        "prompt": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "validation": "",
+        "validationType": "ejsonata",
+        "x": 190,
+        "y": 180,
+        "wires": [
             []
         ]
     },
@@ -1590,26 +1590,10 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 680,
-        "y": 20,
+        "x": 780,
+        "y": 60,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "41be04d2.d76fc4",
-        "type": "sqlite",
-        "z": "7f84d0fc.49d6f",
-        "mydb": "f5a33dc2.f6f08",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 410,
-        "y": 240,
-        "wires": [
-            [
-                "df3ec565.41cf"
-            ]
         ]
     },
     {
@@ -1727,22 +1711,6 @@
         "x": 550,
         "y": 120,
         "wires": []
-    },
-    {
-        "id": "41186c79.d2be6c",
-        "type": "sqlite",
-        "z": "7f84d0fc.49d6f",
-        "mydb": "f5a33dc2.f6f08",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "",
-        "x": 430,
-        "y": 40,
-        "wires": [
-            [
-                "d4d337ca.8077b8"
-            ]
-        ]
     },
     {
         "id": "f64d795d.fb6ae",
@@ -1937,6 +1905,38 @@
         "y": 1400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "41be04d2.d76fc4",
+        "type": "sqlite",
+        "z": "7f84d0fc.49d6f",
+        "mydb": "f5a33dc2.f6f08",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "df3ec565.41cf"
+            ]
+        ]
+    },
+    {
+        "id": "41186c79.d2be6c",
+        "type": "sqlite",
+        "z": "7f84d0fc.49d6f",
+        "mydb": "f5a33dc2.f6f08",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 430,
+        "y": 40,
+        "wires": [
+            [
+                "d4d337ca.8077b8"
+            ]
         ]
     }
 ]
