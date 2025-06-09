@@ -8,7 +8,11 @@
         "node-red-contrib-amazon-echo": "0.1.14",
         "node-red-dashboard": "3.6.5",
         "node-red-node-ui-table": "0.4.4",
-        "node-red-node-ping": "0.3.3"
+        "node-red-node-ping": "0.3.3",
+        "@prescient-devices/node-red-contrib-promptinput": "1.2.4",
+        "node-red-contrib-mqtt-connection-check": "0.1.2",
+        "node-red-contrib-ui-led": "0.4.11",
+        "node-red-node-sqlite": "1.1.0"
     },
     "node-red": {
         "settings": {

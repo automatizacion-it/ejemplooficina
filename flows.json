@@ -40,6 +40,21 @@
         "env": []
     },
     {
+        "id": "9e23ca12.c7d9d",
+        "type": "tab",
+        "label": "speedtest",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "dd1fa0a280aa81d2",
+        "type": "tab",
+        "label": "Flujo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "31a99116.50a74e",
         "type": "mqtt-broker",
         "name": "",
@@ -281,6 +296,40 @@
         "order": 6
     },
     {
+        "id": "1595f349.f61db5",
+        "type": "ui_tab",
+        "name": "Sites",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "1cc42b54.99f39d",
+        "type": "ui_group",
+        "name": "Speed",
+        "tab": "1595f349.f61db5",
+        "order": 2,
+        "disp": true,
+        "width": "20",
+        "collapse": false
+    },
+    {
+        "id": "8274941a.73344",
+        "type": "sqlitedb",
+        "db": "/home/pi/.node-red/data/sites.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "5addf68094c598c3",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "1595f349.f61db5",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "bc7760429d1cafbf",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -330,7 +379,7 @@
         "type": "exec",
         "z": "8c47e81d6c0d7f24",
         "command": "ping google.com",
-        "addpay": "",
+        "addpay": "payload",
         "append": "",
         "useSpawn": "false",
         "timer": "",
@@ -482,6 +531,87 @@
         ]
     },
     {
+        "id": "dc0791b78935c90d",
+        "type": "promptinput",
+        "z": "8c47e81d6c0d7f24",
+        "name": "",
+        "datatype": "str",
+        "prompt": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "validation": "",
+        "validationType": "ejsonata",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23cf19f30950dc60",
+        "type": "inject",
+        "z": "8c47e81d6c0d7f24",
+        "name": "ping",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sudo ping 8.8.8.8",
+        "payloadType": "str",
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "8b4dc4572397daab"
+            ]
+        ]
+    },
+    {
+        "id": "716a42db87720ee1",
+        "type": "debug",
+        "z": "8c47e81d6c0d7f24",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8b4dc4572397daab",
+        "type": "exec",
+        "z": "8c47e81d6c0d7f24",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "716a42db87720ee1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
         "id": "e9ade7b5dd0c05e5",
         "type": "aedes broker",
         "z": "5024414ceab8c8b2",
@@ -580,6 +710,21 @@
         "telePrefix": "tele",
         "x": 650,
         "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af021b2a8951a67a",
+        "type": "mqtt-check",
+        "z": "5024414ceab8c8b2",
+        "host": "",
+        "port": "",
+        "username": "",
+        "password": "",
+        "name": "",
+        "x": 380,
+        "y": 160,
         "wires": [
             []
         ]
@@ -1020,5 +1165,221 @@
         "x": 450,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "c1750149.7c5bf",
+        "type": "inject",
+        "z": "9e23ca12.c7d9d",
+        "name": "",
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "1c7eebf4.fbb444"
+            ]
+        ]
+    },
+    {
+        "id": "1c7eebf4.fbb444",
+        "type": "exec",
+        "z": "9e23ca12.c7d9d",
+        "command": "speedtest-cli",
+        "addpay": false,
+        "append": "--json",
+        "useSpawn": "false",
+        "timer": "60",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 210,
+        "y": 60,
+        "wires": [
+            [
+                "d4353dc7.c7c868",
+                "f21a113.9e6507"
+            ],
+            [],
+            [
+                "f21a113.9e6507"
+            ]
+        ]
+    },
+    {
+        "id": "fb779c41.018bc",
+        "type": "ui_chart",
+        "z": "9e23ca12.c7d9d",
+        "name": "",
+        "group": "5addf68094c598c3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Internet Speed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "24",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#fcb09a",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4353dc7.c7c868",
+        "type": "function",
+        "z": "9e23ca12.c7d9d",
+        "name": "main function",
+        "func": "var payload=JSON.parse(msg.payload);\nvar download=(payload.download/1000000).toFixed(2);\nvar upload=(payload.upload/1000000).toFixed(2);\nvar timestamp=payload.timestamp;\nd=new Date(timestamp);\ntimestamp=d.getTime();\n//msg.payload=[download,upload,timestamp];\nm_out=\"( timestamp,download,upload) values(\"+timestamp +\",\\'\"+download +\"\\'\" +\",\\'\"+ upload+\"\\')\";\nvar topic=\"INSERT INTO SPEED \" +m_out;\nmsg.topic=topic;\nmsg.payload=\"\";\n\nvar msg2={};\nvar msg3={};\nmsg2.topic=\"download\";\nmsg2.payload=download;\nmsg3.topic=\"upload\";\nmsg3.payload=upload;\nvar msg1=[msg2,msg3];\nreturn [msg,msg1];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 80,
+        "wires": [
+            [
+                "6b731213.4cf244"
+            ],
+            [
+                "fb779c41.018bc"
+            ]
+        ]
+    },
+    {
+        "id": "f90f3601.c2b66",
+        "type": "inject",
+        "z": "9e23ca12.c7d9d",
+        "name": "Create table speed",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE SPEED(TIMESTAMP INT PRIMARY KEY NOT NULL, DOWNLOAD TEXT NOT NULL, UPLOAD TEXT NOT NULL)",
+        "payload": "",
+        "payloadType": "str",
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "6b731213.4cf244"
+            ]
+        ]
+    },
+    {
+        "id": "480cb353.f8170c",
+        "type": "inject",
+        "z": "9e23ca12.c7d9d",
+        "name": "drop table speed",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "drop table speed",
+        "payload": "",
+        "payloadType": "str",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "6b731213.4cf244"
+            ]
+        ]
+    },
+    {
+        "id": "4d6a8c52.90fd9c",
+        "type": "inject",
+        "z": "9e23ca12.c7d9d",
+        "name": "remove all records-speed",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE FROM SPEED WHERE TIMESTAMP>=0",
+        "payload": "",
+        "payloadType": "str",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "6b731213.4cf244"
+            ]
+        ]
+    },
+    {
+        "id": "4585c942.f34e18",
+        "type": "debug",
+        "z": "9e23ca12.c7d9d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 550,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f21a113.9e6507",
+        "type": "debug",
+        "z": "9e23ca12.c7d9d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 370,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6b731213.4cf244",
+        "type": "sqlite",
+        "z": "9e23ca12.c7d9d",
+        "mydb": "8274941a.73344",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "sites database",
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "4585c942.f34e18"
+            ]
+        ]
     }
 ]
