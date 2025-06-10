@@ -538,16 +538,6 @@
         "autoInit": "on"
     },
     {
-        "id": "ef11a2ec986362b8",
-        "type": "alexa-home-conf",
-        "username": ""
-    },
-    {
-        "id": "95e45f0f425133dc",
-        "type": "alexa-home-conf",
-        "username": ""
-    },
-    {
         "id": "bc7760429d1cafbf",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -588,8 +578,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 80,
+        "x": 560,
+        "y": 140,
         "wires": []
     },
     {
@@ -872,9 +862,7 @@
         "z": "5024414ceab8c8b2",
         "name": "",
         "mqtt_port": 1883,
-        "mqtt_ws_bind": "port",
         "mqtt_ws_port": "",
-        "mqtt_ws_path": "",
         "cert": "",
         "key": "",
         "certname": "",
@@ -2131,6 +2119,16 @@
                 "2b96f5b22e3b6ae5"
             ]
         ]
+    },
+    {
+        "id": "d68bed1c91cfe849",
+        "type": "comment",
+        "z": "67c588bef353f9fb",
+        "name": "IA",
+        "info": "",
+        "x": 390,
+        "y": 100,
+        "wires": []
     },
     {
         "id": "11d3ad50f3f525b2",
