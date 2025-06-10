@@ -136,14 +136,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "743acd8e3da72623",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "05cd1bad6830275a",
         "type": "ui_base",
         "theme": {
@@ -243,6 +235,67 @@
         }
     },
     {
+        "id": "743acd8e3da72623",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8d8140ebb010027f",
+        "type": "ui_tab",
+        "name": "Grafica estado",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2cf015107704904d",
+        "type": "ui_tab",
+        "name": "Rack",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1595f349.f61db5",
+        "type": "ui_tab",
+        "name": "Sites",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "34054411.bf9404",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "81035a881db37229",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1df6106ece23609a",
+        "type": "ui_link",
+        "name": "Link 5",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 5
+    },
+    {
+        "id": "41840351ade04a83",
+        "type": "ui_link",
+        "name": "Link 6",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 6
+    },
+    {
         "id": "6bd222ac346f1e94",
         "type": "ui_group",
         "name": "Default",
@@ -254,14 +307,6 @@
         "className": ""
     },
     {
-        "id": "8d8140ebb010027f",
-        "type": "ui_tab",
-        "name": "Grafica estado",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "217c870c3da20c03",
         "type": "ui_group",
         "name": "Estado servidor",
@@ -271,14 +316,6 @@
         "width": "23",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "2cf015107704904d",
-        "type": "ui_tab",
-        "name": "Rack",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "a0e1664bf67b8f20",
@@ -303,29 +340,6 @@
         "className": ""
     },
     {
-        "id": "1df6106ece23609a",
-        "type": "ui_link",
-        "name": "Link 5",
-        "icon": "open_in_browser",
-        "target": "newtab",
-        "order": 5
-    },
-    {
-        "id": "41840351ade04a83",
-        "type": "ui_link",
-        "name": "Link 6",
-        "icon": "open_in_browser",
-        "target": "newtab",
-        "order": 6
-    },
-    {
-        "id": "1595f349.f61db5",
-        "type": "ui_tab",
-        "name": "Sites",
-        "icon": "dashboard",
-        "order": 3
-    },
-    {
         "id": "1cc42b54.99f39d",
         "type": "ui_group",
         "name": "Speed",
@@ -347,12 +361,6 @@
         "className": ""
     },
     {
-        "id": "34054411.bf9404",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard"
-    },
-    {
         "id": "d44d4f44.3219e8",
         "type": "ui_group",
         "name": "Sensors",
@@ -361,14 +369,6 @@
         "disp": true,
         "width": "12",
         "collapse": false
-    },
-    {
-        "id": "81035a881db37229",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "e38f7bf677b4d54a",
@@ -392,16 +392,6 @@
         "type": "sqlitedb",
         "db": "c:\\users\\steve\\.node-red\\test.db",
         "mode": "RWC"
-    },
-    {
-        "id": "ef11a2ec986362b8",
-        "type": "alexa-home-conf",
-        "username": ""
-    },
-    {
-        "id": "95e45f0f425133dc",
-        "type": "alexa-home-conf",
-        "username": ""
     },
     {
         "id": "deb7f8ce1d15f8a2",
@@ -548,6 +538,16 @@
         "autoInit": "on"
     },
     {
+        "id": "ef11a2ec986362b8",
+        "type": "alexa-home-conf",
+        "username": ""
+    },
+    {
+        "id": "95e45f0f425133dc",
+        "type": "alexa-home-conf",
+        "username": ""
+    },
+    {
         "id": "bc7760429d1cafbf",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -588,8 +588,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 140,
+        "x": 680,
+        "y": 80,
         "wires": []
     },
     {
@@ -687,68 +687,6 @@
         ]
     },
     {
-        "id": "c769d64b85990897",
-        "type": "ui_chart",
-        "z": "8c47e81d6c0d7f24",
-        "name": "",
-        "group": "217c870c3da20c03",
-        "order": 0,
-        "width": "23",
-        "height": "14",
-        "label": "chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 630,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b227e5a55ca2c692",
-        "type": "ping",
-        "z": "8c47e81d6c0d7f24",
-        "protocol": "Automatic",
-        "mode": "timed",
-        "name": "estado servidor",
-        "host": "www.google.com",
-        "timer": "5",
-        "inputs": 0,
-        "x": 360,
-        "y": 380,
-        "wires": [
-            [
-                "c769d64b85990897"
-            ]
-        ]
-    },
-    {
         "id": "23cf19f30950dc60",
         "type": "inject",
         "z": "8c47e81d6c0d7f24",
@@ -830,25 +768,65 @@
         ]
     },
     {
-        "id": "e9ade7b5dd0c05e5",
-        "type": "aedes broker",
-        "z": "5024414ceab8c8b2",
+        "id": "c769d64b85990897",
+        "type": "ui_chart",
+        "z": "8c47e81d6c0d7f24",
         "name": "",
-        "mqtt_port": 1883,
-        "mqtt_ws_bind": "port",
-        "mqtt_ws_port": "",
-        "mqtt_ws_path": "",
-        "cert": "",
-        "key": "",
-        "certname": "",
-        "keyname": "",
-        "dburl": "",
-        "usetls": false,
-        "x": 370,
-        "y": 80,
+        "group": "217c870c3da20c03",
+        "order": 0,
+        "width": "23",
+        "height": "14",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 400,
         "wires": [
-            [],
             []
+        ]
+    },
+    {
+        "id": "b227e5a55ca2c692",
+        "type": "ping",
+        "z": "8c47e81d6c0d7f24",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "estado servidor",
+        "host": "www.google.com",
+        "timer": "5",
+        "inputs": 0,
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "c769d64b85990897"
+            ]
         ]
     },
     {
@@ -889,21 +867,24 @@
         "wires": []
     },
     {
-        "id": "31a99116.86e71",
-        "type": "Sonoff device",
+        "id": "e9ade7b5dd0c05e5",
+        "type": "aedes broker",
         "z": "5024414ceab8c8b2",
-        "mode": "0",
-        "broker": "31a99116.50a74e",
-        "device": "light_livingroom",
-        "name": "Living Room Light",
-        "onValue": "ON",
-        "offValue": "OFF",
-        "cmdPrefix": "cmnd",
-        "statPrefix": "stat",
-        "telePrefix": "tele",
-        "x": 650,
-        "y": 440,
+        "name": "",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 370,
+        "y": 80,
         "wires": [
+            [],
             []
         ]
     },
@@ -918,6 +899,25 @@
         "name": "",
         "x": 500,
         "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31a99116.86e71",
+        "type": "Sonoff device",
+        "z": "5024414ceab8c8b2",
+        "mode": "0",
+        "broker": "31a99116.50a74e",
+        "device": "light_livingroom",
+        "name": "Living Room Light",
+        "onValue": "ON",
+        "offValue": "OFF",
+        "cmdPrefix": "cmnd",
+        "statPrefix": "stat",
+        "telePrefix": "tele",
+        "x": 650,
+        "y": 440,
         "wires": [
             []
         ]
@@ -968,6 +968,192 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "f6edbdba7e3c93e7",
+        "type": "ui_led",
+        "z": "fd0fab0ccbf119b7",
+        "order": 6,
+        "group": "b0c1535decc5cb95",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "033a8c1e71eb55a8",
+        "type": "ui_led",
+        "z": "fd0fab0ccbf119b7",
+        "order": 1,
+        "group": "a0e1664bf67b8f20",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ca2f72dc32f219bf",
+        "type": "ui_led",
+        "z": "fd0fab0ccbf119b7",
+        "order": 7,
+        "group": "a0e1664bf67b8f20",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5d4895e6477e8c8b",
+        "type": "ui_led",
+        "z": "fd0fab0ccbf119b7",
+        "order": 8,
+        "group": "a0e1664bf67b8f20",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "832cbf49e66223b5",
+        "type": "ui_led",
+        "z": "fd0fab0ccbf119b7",
+        "order": 9,
+        "group": "a0e1664bf67b8f20",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e19cb7a2dcd2b47c",
+        "type": "ui_led",
+        "z": "fd0fab0ccbf119b7",
+        "order": 10,
+        "group": "a0e1664bf67b8f20",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 380,
+        "wires": []
     },
     {
         "id": "7273aad9503671b3",
@@ -1174,192 +1360,6 @@
         ]
     },
     {
-        "id": "f6edbdba7e3c93e7",
-        "type": "ui_led",
-        "z": "fd0fab0ccbf119b7",
-        "order": 6,
-        "group": "b0c1535decc5cb95",
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 430,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "033a8c1e71eb55a8",
-        "type": "ui_led",
-        "z": "fd0fab0ccbf119b7",
-        "order": 1,
-        "group": "a0e1664bf67b8f20",
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 450,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "ca2f72dc32f219bf",
-        "type": "ui_led",
-        "z": "fd0fab0ccbf119b7",
-        "order": 7,
-        "group": "a0e1664bf67b8f20",
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 450,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "5d4895e6477e8c8b",
-        "type": "ui_led",
-        "z": "fd0fab0ccbf119b7",
-        "order": 8,
-        "group": "a0e1664bf67b8f20",
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 450,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "832cbf49e66223b5",
-        "type": "ui_led",
-        "z": "fd0fab0ccbf119b7",
-        "order": 9,
-        "group": "a0e1664bf67b8f20",
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 450,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "e19cb7a2dcd2b47c",
-        "type": "ui_led",
-        "z": "fd0fab0ccbf119b7",
-        "order": 10,
-        "group": "a0e1664bf67b8f20",
-        "width": 0,
-        "height": 0,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": true,
-        "name": "",
-        "x": 450,
-        "y": 380,
-        "wires": []
-    },
-    {
         "id": "c1750149.7c5bf",
         "type": "inject",
         "z": "9e23ca12.c7d9d",
@@ -1402,50 +1402,6 @@
             [
                 "f21a113.9e6507"
             ]
-        ]
-    },
-    {
-        "id": "fb779c41.018bc",
-        "type": "ui_chart",
-        "z": "9e23ca12.c7d9d",
-        "name": "",
-        "group": "5addf68094c598c3",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "label": "Internet Speed",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "0",
-        "ymax": "24",
-        "removeOlder": "12",
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#fcb09a",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 640,
-        "y": 100,
-        "wires": [
-            []
         ]
     },
     {
@@ -1571,7 +1527,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
+        "x": 670,
         "y": 320,
         "wires": []
     },
@@ -1591,6 +1547,50 @@
         "x": 390,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "fb779c41.018bc",
+        "type": "ui_chart",
+        "z": "9e23ca12.c7d9d",
+        "name": "",
+        "group": "5addf68094c598c3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Internet Speed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "24",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#fcb09a",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 680,
+        "y": 100,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "6b731213.4cf244",
@@ -1722,27 +1722,6 @@
             [
                 "41186c79.d2be6c"
             ]
-        ]
-    },
-    {
-        "id": "d4d337ca.8077b8",
-        "type": "ui_template",
-        "z": "7f84d0fc.49d6f",
-        "group": "e38f7bf677b4d54a",
-        "name": "UI Table",
-        "order": 1,
-        "width": "",
-        "height": "",
-        "format": "<style>\n.table\n{\n    height:400px;\n    width:550px;\n    background:lightblue;\n}\n</style>\n<div class=\"table\">\n<table style=\"width:100%\">\n  <tr>\n    <th>TIMESTAMP</th> \n    <th>SENSOR</th>\n    <th>TEMPERATURE</th> \n    <th>HUMIDITY</th>\n  \n  </tr>\n  <tr ng-repeat=\"x in msg.payload | limitTo:10\">\n    <td>{{msg.payload[$index].TIMESTAMP}}</td>\n    <td>{{msg.payload[$index].SENSOR}}</td>\n    <td>{{msg.payload[$index].TEMPERATURE}}</td> \n    <td>{{msg.payload[$index].HUMIDITY}}</td>\n\n  </tr>\n</table>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 780,
-        "y": 60,
-        "wires": [
-            []
         ]
     },
     {
@@ -1890,22 +1869,6 @@
         "targetType": "full",
         "x": 290,
         "y": 820,
-        "wires": []
-    },
-    {
-        "id": "b922566a.497af8",
-        "type": "ui_text",
-        "z": "7f84d0fc.49d6f",
-        "group": "d44d4f44.3219e8",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 410,
-        "y": 740,
         "wires": []
     },
     {
@@ -2057,6 +2020,43 @@
         ]
     },
     {
+        "id": "b922566a.497af8",
+        "type": "ui_text",
+        "z": "7f84d0fc.49d6f",
+        "group": "d44d4f44.3219e8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 410,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "d4d337ca.8077b8",
+        "type": "ui_template",
+        "z": "7f84d0fc.49d6f",
+        "group": "e38f7bf677b4d54a",
+        "name": "UI Table",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "format": "<style>\n.table\n{\n    height:400px;\n    width:550px;\n    background:lightblue;\n}\n</style>\n<div class=\"table\">\n<table style=\"width:100%\">\n  <tr>\n    <th>TIMESTAMP</th> \n    <th>SENSOR</th>\n    <th>TEMPERATURE</th> \n    <th>HUMIDITY</th>\n  \n  </tr>\n  <tr ng-repeat=\"x in msg.payload | limitTo:10\">\n    <td>{{msg.payload[$index].TIMESTAMP}}</td>\n    <td>{{msg.payload[$index].SENSOR}}</td>\n    <td>{{msg.payload[$index].TEMPERATURE}}</td> \n    <td>{{msg.payload[$index].HUMIDITY}}</td>\n\n  </tr>\n</table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "41be04d2.d76fc4",
         "type": "sqlite",
         "z": "7f84d0fc.49d6f",
@@ -2100,7 +2100,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 920,
+        "x": 860,
         "y": 120,
         "wires": []
     },
@@ -2110,7 +2110,7 @@
         "z": "ebf8df8a470fbb3e",
         "name": "",
         "plan": "Unknown",
-        "x": 460,
+        "x": 360,
         "y": 120,
         "wires": [
             [
@@ -2124,8 +2124,8 @@
         "z": "ebf8df8a470fbb3e",
         "name": "luz sala",
         "deviceType": "light",
-        "x": 700,
-        "y": 120,
+        "x": 600,
+        "y": 140,
         "wires": [
             [
                 "2b96f5b22e3b6ae5"
@@ -2146,7 +2146,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 620,
-        "y": 280,
+        "y": 260,
         "wires": []
     },
     {
